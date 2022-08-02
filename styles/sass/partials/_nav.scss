@@ -3,3 +3,27 @@
     top: 0;
     right: -10000px;
 }
+
+.desktop .wrapper ul {
+    display: flex;
+    justify-content: end;
+    li {
+        margin: 0 25px 0 25px;
+    }
+}
+
+.desktop {
+    padding: 10px 0 10px 0;
+}
+
+a {
+    padding: 8px;
+    transition: 0.4s;
+    &:hover, &:focus{
+        background-color: black;
+        color: white;
+    }
+}
+
+
+

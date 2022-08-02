@@ -257,6 +257,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 p {
@@ -270,6 +271,97 @@ p {
   right: -10000px;
 }
 
+.desktop .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.desktop .wrapper ul li {
+  margin: 0 25px 0 25px;
+}
+
+.desktop {
+  padding: 10px 0 10px 0;
+}
+
+a {
+  padding: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+a:hover, a:focus {
+  background-color: black;
+  color: white;
+}
+
 .desktop {
   background-color: beige;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.creator-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100vh;
+  margin-left: 80px;
+}
+
+.creator-image {
+  width: 48%;
+}
+
+.mainImage {
+  background-image: url(../assets/IMG_5063.JPG);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  margin-left: 80px;
+}
+
+.about, .projects, .News {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100vh;
+  margin-left: 80px;
 }

@@ -1,11 +1,7 @@
-.desktop {
-    background-color: beige;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+section {
+    margin-left: 80px;
 }
-
-.creator-heading {
+.about, .projects, .News {
     display: flex;
     flex-direction: column;
     justify-content: center;
