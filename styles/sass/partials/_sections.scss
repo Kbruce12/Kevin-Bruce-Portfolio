@@ -5,7 +5,24 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     height: 100vh;
     margin-left: 80px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+    text-align: center;
+    li {
+        font-size: 2rem;
+        width: 25%;
+    }
+} 
+.info {
+    display: flex;
+}
+.education, .experience {
+    width: 50%;
 }

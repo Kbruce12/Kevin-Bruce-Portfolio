@@ -24,6 +24,9 @@ a {
         color: white;
     }
 }
-
-
-
+ul {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+}
