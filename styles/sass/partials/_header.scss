@@ -1,5 +1,5 @@
 .desktop {
-    background-color: beige;
+    background-color: whitesmoke;
     position: fixed;
     width: 100%;
     z-index: 50;
@@ -13,3 +13,54 @@
     height: 100vh;
     margin-left: 80px;
 }
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    color: #333;
+    margin-bottom: 40px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+h1::after{
+    content: '';
+    border-bottom: 4px black solid;
+    display: block;
+    width: 15%;
+}
+.writing-text  h2 {
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    border-bottom: none;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    animation: moving-text 6s steps(80) 1s infinite alternate;
+}
+.writing-text {
+    animation:blinking-Cursor 400ms steps(44) 1s infinte alternate;
+}
+ @keyframes moving-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 370px;
+    }
+ }
+
+ @keyframes blinking-Cursor {
+
+    from {
+        border-right:#333;
+    }
+
+    to {
+        border-right: transparent;
+    }
+    
+ }

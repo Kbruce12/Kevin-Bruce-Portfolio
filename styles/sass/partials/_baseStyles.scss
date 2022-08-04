@@ -1,5 +1,6 @@
 html {
     font-size: 125%;
+    font-family: 'Poppins', sans-serif;
 }
 .wrapper {
     max-width: 1600px;
@@ -9,6 +10,7 @@ html {
 h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 img {
@@ -32,4 +34,9 @@ p {
     padding: 0;
 }
 
-
+h2 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.2rem;
+}

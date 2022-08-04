@@ -228,6 +228,7 @@ html {
 
 html {
   font-size: 125%;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -239,6 +240,7 @@ html {
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 img {
@@ -265,6 +267,14 @@ p {
   padding: 0;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
 .mobile {
   position: absolute;
   top: 0;
@@ -283,16 +293,21 @@ p {
   margin: 0 25px 0 25px;
 }
 
+.sticky {
+  padding: 0 70px;
+}
+
 .desktop {
   padding: 10px 0 10px 0;
 }
-
-a {
+.desktop a {
   padding: 8px;
+  font-weight: 400;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  display: inline-block;
 }
-a:hover, a:focus {
+.desktop a:hover, .desktop a:focus {
   background-color: black;
   color: white;
 }
@@ -304,7 +319,7 @@ ul {
 }
 
 .desktop {
-  background-color: beige;
+  background-color: whitesmoke;
   position: fixed;
   width: 100%;
   z-index: 50;
@@ -328,13 +343,84 @@ ul {
   margin-left: 80px;
 }
 
-.creator-image {
-  width: 50%;
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  color: #333;
+  margin-bottom: 40px;
+  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
-.mainImage {
+h1::after {
+  content: "";
+  border-bottom: 4px black solid;
+  display: block;
+  width: 15%;
+}
+
+.writing-text h2 {
+  height: 45px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: none;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  -webkit-animation: moving-text 6s steps(80) 1s infinite alternate;
+          animation: moving-text 6s steps(80) 1s infinite alternate;
+}
+
+.writing-text {
+  -webkit-animation: blinking-Cursor 400ms steps(44) 1s infinte alternate;
+          animation: blinking-Cursor 400ms steps(44) 1s infinte alternate;
+}
+
+@-webkit-keyframes moving-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 370px;
+  }
+}
+
+@keyframes moving-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 370px;
+  }
+}
+@-webkit-keyframes blinking-Cursor {
+  from {
+    border-right: #333;
+  }
+  to {
+    border-right: transparent;
+  }
+}
+@keyframes blinking-Cursor {
+  from {
+    border-right: #333;
+  }
+  to {
+    border-right: transparent;
+  }
+}
+.creator-image {
   background-image: url(../assets/IMG_5063.JPG);
   height: 100vh;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -393,4 +479,11 @@ section {
 
 .education, .experience {
   width: 50%;
+}
+
+h2, h3::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 3px whitesmoke solid;
+  width: 80%;
 }

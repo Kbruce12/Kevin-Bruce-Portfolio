@@ -26,3 +26,10 @@ section {
 .education, .experience {
     width: 50%;
 }
+
+h2, h3::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 3px whitesmoke solid;
+    width: 80%;
+}

@@ -11,17 +11,21 @@
         margin: 0 25px 0 25px;
     }
 }
+.sticky {
+    padding: 0 70px;
+}
 
 .desktop {
     padding: 10px 0 10px 0;
-}
-
-a {
+    a {
     padding: 8px;
+    font-weight: 400;
     transition: 0.4s;
+    display: inline-block;
     &:hover, &:focus{
         background-color: black;
         color: white;
+        }
     }
 }
 ul {

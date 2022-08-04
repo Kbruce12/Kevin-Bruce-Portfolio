@@ -1,12 +1,14 @@
 // Main Image
 
 .creator-image {
-    width: 50%;
-}
-.mainImage {
     background-image: url(../assets/IMG_5063.JPG);
     height: 100vh;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+    
+
 main {
     display: flex;
 }
