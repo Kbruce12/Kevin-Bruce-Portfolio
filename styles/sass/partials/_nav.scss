@@ -23,8 +23,8 @@
     transition: 0.4s;
     display: inline-block;
     &:hover, &:focus{
-        background-color: black;
-        color: white;
+        background-color: #333;
+        color: #f6fbff;
         }
     }
 }

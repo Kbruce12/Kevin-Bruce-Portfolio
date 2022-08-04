@@ -231,6 +231,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #f6fbff;
+}
+
 .wrapper {
   max-width: 1600px;
   width: 90%;
@@ -308,8 +312,8 @@ h4 {
   display: inline-block;
 }
 .desktop a:hover, .desktop a:focus {
-  background-color: black;
-  color: white;
+  background-color: #333;
+  color: #f6fbff;
 }
 
 ul {
@@ -387,7 +391,7 @@ h1::after {
     width: 0;
   }
   to {
-    width: 370px;
+    width: 400px;
   }
 }
 
@@ -396,7 +400,7 @@ h1::after {
     width: 0;
   }
   to {
-    width: 370px;
+    width: 400px;
   }
 }
 @-webkit-keyframes blinking-Cursor {
