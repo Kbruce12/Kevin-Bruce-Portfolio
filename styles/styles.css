@@ -245,6 +245,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   color: #333;
+  text-transform: uppercase;
 }
 
 img {
@@ -273,11 +274,17 @@ p {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 .mobile {
@@ -459,21 +466,39 @@ section {
 }
 
 .about h3 {
-  margin-right: 10px;
+  margin: 0 10px 40px 0;
 }
 
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
 }
 .aboutMe p {
   line-height: 1.2rem;
   display: inline-block;
+  border-right: 1px solid #333;
+  padding-right: 15px;
+  width: 50%;
 }
 .aboutMe ul {
   width: calc(50% - 20px);
-  margin-left: 20px;
+  margin: 0 8px 0 20px;
+  border-right: 1px solid #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .aboutMe li {
   display: -webkit-box;
@@ -488,11 +513,14 @@ section {
           align-items: center;
   margin-bottom: 10px;
 }
+.aboutMe li P {
+  border: none;
+}
 .aboutMe li h5 {
   margin-right: 8px;
 }
 
-.about, .projects, .News {
+.about, .projects, .news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,29 +544,43 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
   text-align: center;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  padding: 40px 0;
 }
 .skills li {
   font-size: 2rem;
   width: 25%;
+  padding: 20px;
 }
 
-.info {
+.info-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
 }
 
 .education, .experience {
   width: 50%;
+  padding-left: 8px;
+  border-right: 1px solid #333;
+}
+.education p, .experience p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.education li, .experience li {
+  padding: 10px 0;
 }
 
-h3::after {
+h2::after {
   content: "";
   display: inline-block;
   border-bottom: 3px #333 solid;
-  width: 100%;
+  width: 80%;
 }
 
 .project-gallery ul {
@@ -568,6 +610,18 @@ h3::after {
           transform: scale(0.8);
 }
 
+.news h2 {
+  margin-bottom: 30px;
+}
+
+.news li {
+  width: 50%;
+}
+
+.news h3 {
+  margin-top: 40px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,4 +640,93 @@ footer a {
 }
 footer p {
   margin-left: 10px;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info {
+  margin-top: 30px;
+  text-align: center;
+  padding: 25px;
+}
+
+.in-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.in-touch .location {
+  width: calc(50% - 20px);
+  padding: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 20px);
+  padding: 10px;
+}
+form input, form textarea {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+form input::placeholder, form textarea::placeholder {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  padding: 10px 0 10px 0;
+  color: whitesmoke;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+button:hover, button:focus {
+  border: 1px solid #333;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.get-in-touch {
+  margin-bottom: 500px;
 }

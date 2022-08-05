@@ -1,0 +1,49 @@
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    margin-top: 30px;
+    text-align: center;
+    padding: 25px;
+}
+.in-touch {
+    display: flex;
+    justify-content: space-between;
+    .location {
+        width:  calc(50% - 20px);
+        padding: 10px;
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    padding: 10px;
+    input, textarea {
+        background: transparent;
+        border: 1px solid rgba(0,0,0,.07);
+        margin-bottom: 20px;
+        padding: 10px;
+        &::placeholder {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+    }
+}
+button {
+    background-color: #333;
+    border: none;
+    padding: 10px 0 10px 0;
+    color: whitesmoke;
+    transition: 0.4s;
+    &:hover, &:focus {
+        border: 1px solid #333;
+        background-color: whitesmoke;
+        color: #333;
+    }
+}
+.get-in-touch {
+    margin-bottom: 500px;
+}
