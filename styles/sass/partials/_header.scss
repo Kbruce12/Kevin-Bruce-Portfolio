@@ -12,7 +12,18 @@
     align-items: flex-start;
     height: 100vh;
     margin-left: 80px;
-}
+    a {
+        background-color: #333;
+        padding: 15px 20px;
+        color: whitesmoke;
+        transition: 0.4s;
+        &:hover, &:focus{
+            background-color: #f6fbff;
+            color: #333;
+            border: 2px solid #333;
+            }
+        }
+    }
 h1 {
     font-size: 4rem;
     font-weight: 700;

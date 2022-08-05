@@ -1,6 +1,28 @@
 section {
     margin-left: 80px;
 }
+.about h3 {
+    margin-right: 10px;
+}
+.aboutMe {
+    display: flex;
+    p{
+        line-height: 1.2rem;
+        display: inline-block;
+    }
+    ul {
+        width:calc(50% - 20px);
+        margin-left: 20px;
+    }li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        h5 {
+            margin-right: 8px;
+        }
+    }
+}
 .about, .projects, .News {
     display: flex;
     flex-direction: column;
@@ -27,9 +49,33 @@ section {
     width: 50%;
 }
 
-h2, h3::after {
+h3::after {
     content: "";
     display: inline-block;
-    border-bottom: 3px whitesmoke solid;
-    width: 80%;
+    border-bottom: 3px #333 solid;
+    width: 100%;
+    
 }
+
+// Projects Section
+
+.project-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .project {
+        border-radius: 10%;
+        width: calc(50% - 20px);
+        margin: 0 10px;
+        transition: 0.6s;
+        transition-timing-function: ease-in-out;
+        img {
+            height: 350px;
+        }
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+}
+
+
