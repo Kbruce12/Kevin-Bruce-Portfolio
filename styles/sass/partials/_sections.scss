@@ -69,6 +69,13 @@ section {
         i {
             color: #7d7789;
         }
+        img {
+            color: #7d7789;
+            width: 30px;
+            height: 40px;
+            display: inline;
+            opacity: 0.1;
+        }
     }
 } 
 .info-skills {
@@ -111,9 +118,9 @@ h2::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     .project {
-        width:calc(42% - 20px);
+        width:calc(32% - 20px);
         margin: 20px 40px;
         padding: 40px;
         background-color: whitesmoke;
@@ -133,7 +140,10 @@ h2::after {
 
 // News Section
 
-.news h2 {
+.news {
+    top: -270px;
+    height: 100%;
+}   h2 {
     margin-bottom: 30px;
 }
 
@@ -142,6 +152,11 @@ h2::after {
 }
 .news h3 {
     margin-top: 40px;
+}
+
+// Contact Section 
+.get-in-touch {
+    top: -100px;
 }
 
 

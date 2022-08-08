@@ -1,8 +1,8 @@
-.mobile {
-    display: none;
+.slide-out-nav {
     position: absolute;
     top: 0;
     right: -10000px;
+    display: none;
 }
 
 .desktop .wrapper ul {
@@ -14,6 +14,12 @@
 }
 .sticky {
     padding: 0 70px;
+}
+.hamburger {
+    position: absolute;
+    top:0;
+    right: -10000px;
+    display: none;
 }
 
 .desktop {

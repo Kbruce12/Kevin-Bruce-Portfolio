@@ -288,11 +288,11 @@ h4 {
   line-height: 1.2rem;
 }
 
-.mobile {
-  display: none;
+.slide-out-nav {
   position: absolute;
   top: 0;
   right: -10000px;
+  display: none;
 }
 
 .desktop .wrapper ul {
@@ -309,6 +309,13 @@ h4 {
 
 .sticky {
   padding: 0 70px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: -10000px;
+  display: none;
 }
 
 .desktop {
@@ -586,6 +593,13 @@ section {
 .skills li i {
   color: #7d7789;
 }
+.skills li img {
+  color: #7d7789;
+  width: 30px;
+  height: 40px;
+  display: inline;
+  opacity: 0.1;
+}
 
 .info-skills {
   display: -webkit-box;
@@ -631,10 +645,10 @@ h2::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .project-gallery ul .project {
-  width: calc(42% - 20px);
+  width: calc(32% - 20px);
   margin: 20px 40px;
   padding: 40px;
   background-color: whitesmoke;
@@ -654,7 +668,12 @@ h2::after {
   margin-top: 20px;
 }
 
-.news h2 {
+.news {
+  top: -270px;
+  height: 100%;
+}
+
+h2 {
   margin-bottom: 30px;
 }
 
@@ -664,6 +683,10 @@ h2::after {
 
 .news h3 {
   margin-top: 40px;
+}
+
+.get-in-touch {
+  top: -100px;
 }
 
 footer {
@@ -773,4 +796,56 @@ button:hover, button:focus {
 
 .get-in-touch {
   margin-bottom: 500px;
+}
+
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .creator-image {
+    width: 400px;
+  }
+  .about, projects, .news, .get-in-touch {
+    margin-left: 30px;
+  }
+  .about {
+    left: 366px;
+    max-height: 1400px;
+  }
+  .news {
+    top: -74px;
+    left: 324px;
+  }
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .creator-image {
+    width: 400px;
+  }
+  .desktop nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .hamburger {
+    color: #333;
+    top: 25px;
+    right: 10px;
+  }
+  .creator-heading {
+    margin-left: 10px;
+  }
+  .overlay {
+    display: none;
+  }
+  .creator-image {
+    display: none;
+  }
+  .desktop nav {
+    display: none;
+  }
 }

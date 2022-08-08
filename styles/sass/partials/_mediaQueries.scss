@@ -1,0 +1,52 @@
+@media (max-width:1300px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .creator-image {
+        width: 400px;
+    }
+    .about, projects, .news, .get-in-touch {
+        margin-left: 30px;
+    }
+    .about {
+        left: 366px;
+        max-height: 1400px;
+    }
+    .news {
+        top: -74px;
+        left: 324px;
+    }
+
+}
+@media (max-width:1000px){
+    h1 {
+        font-size: 2rem;
+    }
+    .creator-image {
+        width: 400px;
+    }
+    .desktop nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px){
+    .hamburger {
+        color: #333;
+        top: 25px;
+        right:10px;
+    }
+    .creator-heading {
+        margin-left: 10px;
+    }
+    .overlay {
+        display: none;
+    }
+    .creator-image {
+        display: none;
+    }
+    .desktop nav {
+        display: none;
+    }
+    
+}
