@@ -52,15 +52,18 @@
             <div class="desktop">
                 <div class="wrapper">
                     <div class="sticky">
-                        <nav>
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#news">News</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
+                        <div class="nav-list">
+                            <div class="overlay"></div>
+                            <nav>
+                                <ul>
+                                    <li class="home"><a href="#home">Home</a></li>
+                                    <li class="aboutNav"><a href="#about">About</a></li>
+                                    <li class="projectsNav"><a href="#projects">Projects</a></li>
+                                    <li class="newsNav"><a href="#news">News</a></li>
+                                    <li class="contactNav"><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,7 +85,7 @@
             </div>
     
             <!-- About Section -->
-            <section class="about" id="about">
+            <section class="about wrapper" id="about">
                 <h2>About Me</h2>
                 <div class="aboutMe"> 
                     <p>I am a front end developer using my knowlegde of HTML5, CSS, JavaScript, JQuery and SASS to create responsive and accesible web applications.I am creative and a empathetic leader who utilizes exceptional problem-solving, teamwork and organizational skills to achieve organizational goals. I am looking to leverage my 10 years of leadership experience in the HVAC and home renovation industry to pursue a new career in Web and App development.</p>
@@ -109,7 +112,8 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="tech-skills">
+                    <h3>Skills</h3>
                     <ul class="skills">
                         <li class="skill">
                             <i class="fa-brands fa-html5"></i>
@@ -186,7 +190,7 @@
                 </div>
             </section>
             <!-- Projects Section -->
-            <section class="projects" id="projects">
+            <section class="projects wrapper" id="projects">
                 <div>
                     <h2>Creative Projects</h2>
                     <div class="project-gallery">
@@ -232,7 +236,7 @@
                 </div>
             </section>
             <!-- Blog Section -->
-            <section class="news" id="news">
+            <section class="news wrapper" id="news">
                 <div>
                     <h2>News</h2>
                     <div>
@@ -251,7 +255,7 @@
                 </div>
             </section>
             <!-- Contact Page -->
-            <div class="get-in-touch" id="contact">
+            <div class="get-in-touch wrapper" id="contact">
                 <h2>Get in touch</h2>
                 <div class="contact-info">
                     <div class="info">

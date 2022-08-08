@@ -34,3 +34,15 @@ ul {
     top: 0;
     z-index: 20;
 }
+
+.overlay {
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    background-color: #333;
+    z-index: -1;
+    transition: 0.4s ease left, width, opacity;
+}
+.overlay .active {
+    opacity: 1;
+}

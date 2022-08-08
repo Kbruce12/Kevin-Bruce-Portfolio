@@ -332,6 +332,20 @@ ul {
   z-index: 20;
 }
 
+.overlay {
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  background-color: #333;
+  z-index: -1;
+  -webkit-transition: 0.4s ease left, width, opacity;
+  transition: 0.4s ease left, width, opacity;
+}
+
+.overlay .active {
+  opacity: 1;
+}
+
 .desktop {
   background-color: whitesmoke;
   position: fixed;
@@ -379,8 +393,6 @@ h1 {
   background: transparent;
   color: #333;
   margin-bottom: 40px;
-  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
-          animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 h1::after {
@@ -480,7 +492,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 60px;
+  margin: 60px 0;
 }
 .aboutMe p {
   line-height: 1.2rem;
@@ -524,7 +536,7 @@ section {
   margin-right: 8px;
 }
 
-.about, .projects, .news {
+.about, .projects, .news, .get-in-touch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,6 +551,12 @@ section {
   margin-left: 80px;
 }
 
+.tech-skills {
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  padding: 20px;
+}
+
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,10 +566,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 0;
   text-align: center;
-  border-bottom: 1px solid #333;
-  border-top: 1px solid #333;
   padding: 40px 0;
 }
 .skills li {
