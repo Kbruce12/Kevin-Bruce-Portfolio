@@ -636,6 +636,8 @@ h2::after {
 .project-gallery ul .project {
   width: calc(40% - 20px);
   margin: 20px 40px;
+  padding: 40px;
+  background-color: whitesmoke;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transition-timing-function: ease-in-out;
