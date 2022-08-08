@@ -458,8 +458,8 @@ h1::after {
 }
 .creator-image {
   background-image: url(../assets/profile-photo-one.jpg);
-  height: 100vh;
-  width: 50%;
+  height: 100%;
+  width: 900px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -547,8 +547,17 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: 100%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin-left: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 550px;
+  right: 0;
+  visibility: hidden;
 }
 
 .tech-skills {
@@ -622,11 +631,11 @@ h2::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 40px;
 }
 .project-gallery ul .project {
-  border-radius: 10%;
-  width: calc(50% - 20px);
-  margin: 0 10px;
+  width: calc(40% - 20px);
+  margin: 20px 40px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transition-timing-function: ease-in-out;
@@ -638,6 +647,9 @@ h2::after {
 .project-gallery ul .project:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+.project-gallery ul .project p {
+  margin-top: 20px;
 }
 
 .news h2 {
@@ -664,6 +676,7 @@ footer {
   position: sticky;
   bottom: 0;
   z-index: 20;
+  margin-top: 50px;
 }
 footer a {
   margin: 0 10px;

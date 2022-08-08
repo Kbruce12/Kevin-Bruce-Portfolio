@@ -40,8 +40,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+    max-width:fit-content;
     margin-left: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:550px;
+    right:0;
+    visibility: hidden;
 }
 .tech-skills {
     border-bottom: 1px solid #333;
@@ -104,10 +111,11 @@ h2::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 40px;
     .project {
-        border-radius: 10%;
-        width: calc(50% - 20px);
-        margin: 0 10px;
+        width:calc(40% - 20px);
+        margin: 20px 40px;
+        // padding: 40px;
         transition: 0.6s;
         transition-timing-function: ease-in-out;
         img {
@@ -115,6 +123,9 @@ h2::after {
         }
         &:hover {
             transform: scale(0.8);
+        }
+        p {
+            margin-top: 20px;
         }
     }
 }
