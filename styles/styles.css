@@ -341,8 +341,10 @@ ul {
 
 .overlay {
   position: absolute;
-  height: 10px;
-  width: 100px;
+  left: 643.4px;
+  top: 10px;
+  height: 39px;
+  width: 75.6334px;
   background-color: #333;
   z-index: -1;
   -webkit-transition: 0.4s ease left, width, opacity;
@@ -351,6 +353,7 @@ ul {
 
 .overlay .active {
   opacity: 1;
+  color: #f6fbff !important;
 }
 
 .desktop {
@@ -745,7 +748,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 20px);
+  width: 100%;
   padding: 10px;
 }
 form input, form textarea {

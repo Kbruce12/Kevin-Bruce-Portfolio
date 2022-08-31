@@ -11,7 +11,7 @@ const projectPage = document.querySelector('.projects');
 const newsPage = document.querySelector('.news');
 const contactPage = document.querySelector('.get-in-touch');
 const inTouchEl = document.querySelector('.button');
-
+const ulEl = document.querySelector('ul');
 
 
 
@@ -21,14 +21,17 @@ navEl.forEach(list_item => {
         let position = list_item.getBoundingClientRect();
         overLay.style.left = position.x + 'px';
         overLay.style.top = position.y + 'px';
-        overLay.style.height = position.height + 'px';
         overLay.style.width = position.width + 'px';
-
+        
     })
     list_item.addEventListener('mouseout', () =>{
         overLay.classList.remove('active')
     })
+    if(overLay.classList.remove('active')){
+        list_item.style.color = "#f6fbff;"
+    }
 })
+        
 
 homeEl.addEventListener('click', () => {
     homePage.style.visibility = 'visible';
