@@ -237,7 +237,7 @@ body {
 
 .wrapper {
   max-width: 1600px;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -341,7 +341,7 @@ ul {
 
 .overlay {
   position: absolute;
-  left: 643.4px;
+  left: 1363px;
   top: 10px;
   height: 39px;
   width: 75.6334px;
@@ -469,7 +469,7 @@ h1::after {
 .creator-image {
   background-image: url(../assets/profile-photo-one.jpg);
   height: 100vh;
-  width: 850px;
+  width: 40vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -485,6 +485,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 section {
@@ -557,15 +558,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   margin-left: 80px;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 550px;
+  left: 710px;
   right: 0;
   visibility: hidden;
 }
