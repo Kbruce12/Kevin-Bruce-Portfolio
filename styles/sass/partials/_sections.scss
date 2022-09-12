@@ -65,6 +65,18 @@ section {
         font-size: 2rem;
         width: 25%;
         padding: 20px;
+        &:hover{
+            i {
+                color: rgb(115, 152, 203);
+            }
+            img {
+                color:rgb(115, 152, 203);
+                opacity: 0.6;
+            }
+            h4 {
+                color:rgb(115, 152, 203);
+            }
+        }
         i {
             color: #7d7789;
         }
@@ -138,6 +150,9 @@ h2::after {
             align-items: center;
             a{
                 margin: 8px 8px 0 0;
+                &:hover {
+                    border-bottom: 1px solid #333;
+                }
             }
         }
     }
@@ -147,8 +162,8 @@ h2::after {
         margin: 20px 40px;
         padding: 40px;
         background-color: whitesmoke;
-        transition: 0.6s;
-        transition-timing-function: ease-in-out;
+        // transition: 0.6s;
+        // transition-timing-function: ease-in-out;
         a{
             display: flex;
         }
@@ -156,13 +171,17 @@ h2::after {
             width: 50%;
             height: 350px;
         }
-        &:hover {
-            transform: scale(0.8);
-        }
+        // &:hover {
+        //     transform: scale(0.8);
+        // }
         p {
             margin-top: 20px;
         }
     }
+}
+.tools {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -170,7 +189,6 @@ h2::after {
 
 .news {
     top: -270px;
-    // height: 100%;
 }   h2 {
     margin-bottom: 30px;
 }
