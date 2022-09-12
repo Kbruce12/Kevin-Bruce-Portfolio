@@ -569,10 +569,6 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
   padding: 40px 0;
 }
 .skills li {
@@ -649,6 +645,7 @@ h2::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80%;
 }
 .project-gallery ul .slide-out {
   display: -webkit-box;
@@ -659,7 +656,7 @@ h2::after {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  margin-left: 15px;
+  margin-left: 90px;
 }
 .project-gallery ul .slide-out i {
   font-size: 2rem;
@@ -690,9 +687,8 @@ h2::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 20px 40px;
+  margin: 20px 0;
   padding: 40px;
-  background-color: whitesmoke;
 }
 .project-gallery ul .project a {
   display: -webkit-box;
