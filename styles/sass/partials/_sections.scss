@@ -169,9 +169,6 @@ h2::after {
             width: 50%;
             height: 350px;
         }
-        // &:hover {
-        //     transform: scale(0.8);
-        // }
         p {
             margin-top: 20px;
         }
@@ -180,6 +177,9 @@ h2::after {
 .tools {
     display: flex;
     align-items: center;
+}
+img .img-three {
+    width: 25%;
 }
 
 
@@ -202,5 +202,4 @@ h2::after {
 .get-in-touch {
     top: -100px;
 }
-
 
