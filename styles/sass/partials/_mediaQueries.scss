@@ -5,15 +5,6 @@
     .creator-image {
         width: 400px;
     }
-    .about {
-        left: 366px;
-        max-height: 1400px;
-    }
-    .news {
-        top: -74px;
-        left: 324px;
-    }
-
 }
 @media (max-width:1000px){
     h1 {
@@ -25,6 +16,66 @@
     .desktop nav {
         justify-content: center;
     }
+    .project-gallery ul .project img {
+        height: 300px;
+    }
+    .project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.project-two, &.project-four {
+            margin-right: 50px;
+            flex-direction: column !important;
+        }
+        &.project-one, &.project-three {
+            margin-left: 50px;
+        }
+        .slide-out {
+            width: 100% !important;
+            margin: 50px 0;
+        }
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    .aboutMe {
+        flex-direction: column;
+        margin: -10px 0 0 0;
+        p {
+            border: none;
+            width: 100%;
+        }
+        ul {
+            margin: 30px 0;
+            p {
+                min-width: 100%;
+            }
+        }
+    }
+    .skills {
+        padding: 0;
+    }
+}
+@media (max-width:800px){
+    .desktop .wrapper ul {
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+    .writing-text h2 {
+        font-size: 1rem;
+    }
+    @keyframes moving-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 300px;
+        }
+     }
+     .contact-info {
+        flex-direction: column;
+     }
 }
 
 @media (max-width: 450px){
@@ -45,5 +96,37 @@
     .desktop nav {
         display: none;
     }
-    
+    .aboutMe p {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    .tech-skills {
+        padding: 0;
+        h3 {
+            margin-top: 15px;
+        }
+    }
+    .skills li {
+        width: 50%;
+    }
+    .contact-info {
+        align-items: center;
+    }
+    .get-in-touch {
+        h2 {
+            text-align: center;
+        }
+    }
+    .info-skills {
+        flex-direction: column;
+        .education, .experience {
+            width: auto;
+        }
+        .education {
+            border-bottom:1px solid #333;
+        }
+    }
+    .news li {
+        width: 100%;
+    }
 }

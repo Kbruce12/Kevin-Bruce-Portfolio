@@ -292,7 +292,6 @@ h4 {
   position: absolute;
   top: 0;
   right: -10000px;
-  display: none;
 }
 
 .desktop .wrapper ul {
@@ -315,7 +314,6 @@ h4 {
   position: absolute;
   top: 0;
   right: -10000px;
-  display: none;
 }
 
 .desktop {
@@ -511,7 +509,6 @@ section {
 .aboutMe ul {
   width: calc(50% - 20px);
   margin: 0 8px 0 20px;
-  border-right: 1px solid #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,6 +644,9 @@ h2::after {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.project-gallery ul img {
+  width: 50%;
+}
 .project-gallery ul .slide-out {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,7 +656,6 @@ h2::after {
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(50% - 90px);
-  margin-left: 90px;
 }
 .project-gallery ul .slide-out i {
   font-size: 2rem;
@@ -734,11 +733,7 @@ h2::after {
           align-items: center;
 }
 
-.news {
-  top: -270px;
-}
-
-h2 {
+.news h2 {
   margin-bottom: 30px;
 }
 
@@ -866,14 +861,6 @@ button:hover, button:focus {
   .creator-image {
     width: 400px;
   }
-  .about {
-    left: 366px;
-    max-height: 1400px;
-  }
-  .news {
-    top: -74px;
-    left: 324px;
-  }
 }
 @media (max-width: 1000px) {
   h1 {
@@ -886,6 +873,92 @@ button:hover, button:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .project-gallery ul .project img {
+    height: 300px;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project.project-two, .project.project-four {
+    margin-right: 50px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .project.project-one, .project.project-three {
+    margin-left: 50px;
+  }
+  .project .slide-out {
+    width: 100% !important;
+    margin: 50px 0;
+  }
+  .project img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: -10px 0 0 0;
+  }
+  .aboutMe p {
+    border: none;
+    width: 100%;
+  }
+  .aboutMe ul {
+    margin: 30px 0;
+  }
+  .aboutMe ul p {
+    min-width: 100%;
+  }
+  .skills {
+    padding: 0;
+  }
+}
+@media (max-width: 800px) {
+  .desktop .wrapper ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.9rem;
+  }
+  .writing-text h2 {
+    font-size: 1rem;
+  }
+  @-webkit-keyframes moving-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 300px;
+    }
+  }
+  @keyframes moving-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 300px;
+    }
+  }
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 450px) {
@@ -905,6 +978,42 @@ button:hover, button:focus {
   }
   .desktop nav {
     display: none;
+  }
+  .aboutMe p {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  .tech-skills {
+    padding: 0;
+  }
+  .tech-skills h3 {
+    margin-top: 15px;
+  }
+  .skills li {
+    width: 50%;
+  }
+  .contact-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .get-in-touch h2 {
+    text-align: center;
+  }
+  .info-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-skills .education, .info-skills .experience {
+    width: auto;
+  }
+  .info-skills .education {
+    border-bottom: 1px solid #333;
+  }
+  .news li {
+    width: 100%;
   }
 }
 .darkMode {
@@ -952,9 +1061,14 @@ button:hover, button:focus {
 .darkMode input::placeholder, .darkMode textarea::placeholder {
   color: whitesmoke;
 }
+.darkMode .active-darkmode {
+  color: #f6fbff;
+}
 
 .active-darkmode {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  color: #333;
+  top: 75px;
+  right: 20px;
+  cursor: pointer;
 }

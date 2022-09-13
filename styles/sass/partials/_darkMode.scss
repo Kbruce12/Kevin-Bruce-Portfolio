@@ -31,10 +31,15 @@
         &::placeholder {
             color: whitesmoke;
         }
+    }
+    .active-darkmode {
+        color: #f6fbff;
     }    
 }
 .active-darkmode {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    color: #333;
+    top: 75px;
+    right: 20px;
+    cursor: pointer;
 }
