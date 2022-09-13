@@ -233,6 +233,7 @@ html {
 
 body {
   background-color: #f6fbff;
+  position: relative;
 }
 
 .wrapper {
@@ -291,7 +292,21 @@ h4 {
 .slide-out-nav {
   position: absolute;
   top: 0;
-  right: -10000px;
+  right: 10000px;
+  background-color: whitesmoke;
+  padding: 30px;
+  z-index: 100;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.slide-out-nav li {
+  margin: 20px 0;
+}
+.slide-out-nav i {
+  padding: 5px;
+}
+.slide-out-nav p {
+  text-align: end;
 }
 
 .desktop .wrapper ul {
@@ -313,7 +328,8 @@ h4 {
 .hamburger {
   position: absolute;
   top: 0;
-  right: -10000px;
+  right: 10000px;
+  cursor: pointer;
 }
 
 .desktop {
@@ -965,7 +981,7 @@ button:hover, button:focus {
   .hamburger {
     color: #333;
     top: 25px;
-    right: 10px;
+    right: 20px;
   }
   .creator-heading {
     margin-left: 10px;
