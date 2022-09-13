@@ -12,6 +12,10 @@ const newsPage = document.querySelector('.news');
 const contactPage = document.querySelector('.get-in-touch');
 const inTouchEl = document.querySelector('.button');
 const ulEl = document.querySelector('ul');
+const darkMode = document.querySelector('.active-darkmode');
+const bodyEl = document.querySelector('body');
+console.log(darkMode);
+console.log(bodyEl);
 
 
 
@@ -31,6 +35,11 @@ navEl.forEach(list_item => {
         list_item.style.color = "#f6fbff;"
     }
 })
+darkMode.addEventListener('click', function(){
+    bodyEl.classList.toggle('darkMode')
+});
+
+
         
 
 // homeEl.addEventListener('click', () => {

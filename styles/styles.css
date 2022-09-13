@@ -341,7 +341,7 @@ ul {
 
 .overlay {
   position: absolute;
-  left: 1363px;
+  left: 1282px;
   top: 10px;
   height: 39px;
   width: 75.6334px;
@@ -570,6 +570,7 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 40px 0;
+  text-align: center;
 }
 .skills li {
   font-size: 2rem;
@@ -645,7 +646,6 @@ h2::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
 }
 .project-gallery ul .slide-out {
   display: -webkit-box;
@@ -655,7 +655,7 @@ h2::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: calc(50% - 90px);
   margin-left: 90px;
 }
 .project-gallery ul .slide-out i {
@@ -669,7 +669,7 @@ h2::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
+  margin-top: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -677,8 +677,26 @@ h2::after {
 .project-gallery ul .slide-out .live-links a {
   margin: 8px 8px 0 0;
 }
-.project-gallery ul .slide-out .live-links a:hover {
-  border-bottom: 1px solid #333;
+.project-gallery ul .underline-hover {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+.project-gallery ul .underline-hover::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+.project-gallery ul .underline-hover:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 .project-gallery ul .project {
   display: -webkit-box;
@@ -687,8 +705,7 @@ h2::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 20px 0;
-  padding: 40px;
+  margin: 80px 0;
 }
 .project-gallery ul .project a {
   display: -webkit-box;
@@ -697,10 +714,15 @@ h2::after {
 }
 .project-gallery ul .project img {
   width: 50%;
-  height: 350px;
 }
 .project-gallery ul .project p {
   margin-top: 20px;
+}
+.project-gallery ul .project.project-two, .project-gallery ul .project.project-four {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .tools {
@@ -721,15 +743,11 @@ h2 {
 }
 
 .news li {
-  width: 50%;
+  width: 30%;
 }
 
 .news h3 {
   margin-top: 40px;
-}
-
-.get-in-touch {
-  top: -100px;
 }
 
 footer {
@@ -838,7 +856,7 @@ button:hover, button:focus {
 }
 
 .get-in-touch {
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 @media (max-width: 1440px) {
@@ -888,4 +906,55 @@ button:hover, button:focus {
   .desktop nav {
     display: none;
   }
+}
+.darkMode {
+  background-color: #333 !important;
+}
+.darkMode h1, .darkMode h2, .darkMode h3, .darkMode h4, .darkMode h5, .darkMode p {
+  color: whitesmoke !important;
+}
+.darkMode h2::after {
+  border-bottom: 3px whitesmoke solid;
+}
+.darkMode .button, .darkMode button {
+  background-color: whitesmoke !important;
+  color: #333;
+}
+.darkMode .button:hover, .darkMode .button:focus, .darkMode button:hover, .darkMode button:focus {
+  border: 1px solid whitesmoke !important;
+  background-color: #333 !important;
+  color: whitesmoke;
+}
+.darkMode .project a {
+  color: whitesmoke;
+}
+.darkMode .slide-out i {
+  color: whitesmoke;
+}
+.darkMode .info i {
+  color: whitesmoke;
+}
+.darkMode input, .darkMode textarea {
+  border: 1px solid whitesmoke;
+}
+.darkMode input::-webkit-input-placeholder, .darkMode textarea::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+.darkMode input::-moz-placeholder, .darkMode textarea::-moz-placeholder {
+  color: whitesmoke;
+}
+.darkMode input:-ms-input-placeholder, .darkMode textarea:-ms-input-placeholder {
+  color: whitesmoke;
+}
+.darkMode input::-ms-input-placeholder, .darkMode textarea::-ms-input-placeholder {
+  color: whitesmoke;
+}
+.darkMode input::placeholder, .darkMode textarea::placeholder {
+  color: whitesmoke;
+}
+
+.active-darkmode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

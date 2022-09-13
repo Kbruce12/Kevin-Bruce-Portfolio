@@ -1,0 +1,40 @@
+// Dark Mode
+
+.darkMode {
+    background-color: #333 !important;
+    h1, h2, h3, h4, h5, p  {
+        color: whitesmoke !important;
+    }
+    h2::after {
+        border-bottom: 3px whitesmoke solid;
+    }
+    .button, button {
+        background-color: whitesmoke !important;
+        color: #333;
+        &:hover, &:focus {
+            border: 1px solid whitesmoke !important;
+            background-color: #333 !important;
+            color: whitesmoke;
+        }
+    }
+    .project a {
+        color: whitesmoke;
+    }
+    .slide-out i {
+        color: whitesmoke;
+    }
+    .info i {
+        color: whitesmoke;
+    }
+    input, textarea {
+        border: 1px solid whitesmoke;
+        &::placeholder {
+            color: whitesmoke;
+        }
+    }    
+}
+.active-darkmode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
