@@ -727,9 +727,6 @@ h2::after {
   display: -ms-flexbox;
   display: flex;
 }
-.project-gallery ul .project img {
-  width: 50%;
-}
 .project-gallery ul .project p {
   margin-top: 20px;
 }
@@ -991,6 +988,9 @@ button:hover, button:focus {
   }
   .project-gallery ul .project {
     margin: 40px;
+  }
+  .project-gallery ul .project-display {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
