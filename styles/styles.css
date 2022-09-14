@@ -660,7 +660,7 @@ h2::after {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.project-gallery ul img {
+.project-gallery ul .project-display {
   width: 50%;
 }
 .project-gallery ul .slide-out {
@@ -994,6 +994,9 @@ button:hover, button:focus {
   }
 }
 @media (max-width: 450px) {
+  .wrapper {
+    width: 90%;
+  }
   .hamburger {
     color: #333;
     top: 25px;
@@ -1012,9 +1015,8 @@ button:hover, button:focus {
     display: none;
   }
   .aboutMe p {
-    margin-top: 30px;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .tech-skills {
     padding: 0;
@@ -1024,6 +1026,7 @@ button:hover, button:focus {
   }
   .skills li {
     width: 50%;
+    margin: 0;
   }
   .contact-info {
     -webkit-box-align: center;
@@ -1047,6 +1050,9 @@ button:hover, button:focus {
   }
   .news li {
     width: 100%;
+  }
+  .footer p {
+    font-size: 0.8rem;
   }
 }
 .darkMode {

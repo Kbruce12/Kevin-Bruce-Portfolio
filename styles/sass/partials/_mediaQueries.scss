@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 450px){
+    .wrapper {
+        width: 90%;
+    }
     .hamburger {
         color: #333;
         top: 25px;
@@ -114,9 +117,8 @@
         display: none;
     }
     .aboutMe p {
-        margin-top: 30px;
         padding: 0;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     .tech-skills {
         padding: 0;
@@ -126,6 +128,7 @@
     }
     .skills li {
         width: 50%;
+        margin: 0;
     }
     .contact-info {
         align-items: center;
@@ -146,5 +149,8 @@
     }
     .news li {
         width: 100%;
+    }
+    .footer p {
+        font-size: 0.8rem;
     }
 }
