@@ -56,6 +56,7 @@
     .skills {
         padding: 0;
     }
+    
 }
 @media (max-width:800px){
     .desktop .wrapper ul {
@@ -72,10 +73,26 @@
         to {
             width: 300px;
         }
-     }
-     .contact-info {
+    }
+    .contact-info {
         flex-direction: column;
-     }
+    }
+    .about h2 {
+        margin-bottom: 30px;
+    }
+    .skills li {
+        margin: 10px;
+        h4 {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    }
+    .aboutMe P {
+        font-size: 0.8rem;
+    }
+    .project-gallery ul .project {
+        margin: 40px;
+    }
 }
 
 @media (max-width: 450px){
@@ -97,6 +114,7 @@
         display: none;
     }
     .aboutMe p {
+        margin-top: 30px;
         padding: 0;
         font-size: 0.9rem;
     }
