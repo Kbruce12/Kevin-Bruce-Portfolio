@@ -1126,6 +1126,9 @@ button:hover, button:focus {
 .darkMode .hamburger {
   color: whitesmoke;
 }
+.darkMode .footer p {
+  color: #7d7789 !important;
+}
 
 .active-darkmode {
   position: absolute;
