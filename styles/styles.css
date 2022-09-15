@@ -1001,6 +1001,7 @@ button:hover, button:focus {
     color: #333;
     top: 25px;
     right: 20px;
+    position: fixed;
   }
   .creator-heading {
     margin-left: 10px;
@@ -1054,6 +1055,25 @@ button:hover, button:focus {
   .footer p {
     font-size: 0.8rem;
   }
+  @-webkit-keyframes moving-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 250px;
+    }
+  }
+  @keyframes moving-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 250px;
+    }
+  }
+  .slide-out-nav {
+    position: fixed;
+  }
 }
 .darkMode {
   background-color: #333 !important;
@@ -1102,6 +1122,9 @@ button:hover, button:focus {
 }
 .darkMode .active-darkmode {
   color: #f6fbff;
+}
+.darkMode .hamburger {
+  color: whitesmoke;
 }
 
 .active-darkmode {

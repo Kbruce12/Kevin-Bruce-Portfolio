@@ -106,6 +106,7 @@
         color: #333;
         top: 25px;
         right:20px;
+        position: fixed;
     }
     .creator-heading {
         margin-left: 10px;
@@ -155,5 +156,16 @@
     }
     .footer p {
         font-size: 0.8rem;
+    }
+    @keyframes moving-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 250px;
+        }
+    }
+    .slide-out-nav {
+        position: fixed;
     }
 }
